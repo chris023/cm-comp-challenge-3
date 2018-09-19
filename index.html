@@ -1,148 +1,252 @@
 <html lang='en'>
+
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <title>Static Comp 3</title>
   <link rel='stylesheet' href='css/normalize.css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet'>
   <link rel='stylesheet' href='css/styles.css'>
 </head>
+
 <body>
   <main>
     <nav class='main-nav'>
       <section class='main-nav-header nav-el'>
         <div class='profile-pic'></div>
-        <h2>Brad Pitt &or;</h2>
+        <h2>Bradley Pitt <i class="fas fa-angle-down"></i></h2>
       </section>
       <section class='main-nav-main nav-el'>
-        <h3>Main</h3>
-        <h4>HOME</h4>
-        <h4>JOBS</h4>
-        <h4>RESUMES</h4>
-        <h4>TASKS</h4>
-        <h4>CALENDAR</h4>
+        <h3 class='main-nav-grid-title'>Main</h3>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-home"></i>
+          <h4>HOME</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-briefcase"></i>
+          <h4>JOBS</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-file"></i>
+          <h4>RESUMES</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-clipboard-list"></i>
+          <h4>TASKS</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-calendar-alt"></i>
+          <h4>CALENDAR</h4>
+        </div>
       </section>
-      <section class='main-nav-admin nav-el'>
-        <h3>Admin</h3>
-        <h4>USERS</h4>
-        <h4>LOCATIONS</h4>
-        <h4>WORKFLOWS</h4>
-        <h4>JOB BOARDS</h4>
-        <h4>SOCIAL</h4>
+      <section class='main-nav-grid main-nav-admin nav-el'>
+        <h3 class='main-nav-grid-title'>Admin</h3>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-user-friends"></i>
+          <h4>USERS</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>LOCATIONS</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-project-diagram"></i>
+          <h4>WORKFLOWS</h4>
+        </div>
+        <div class='main-nav-title-item'>
+          <i class="fas fa-paste"></i>
+          <h4>JOB BOARDS</h4>
+        </div>
+        <div class="main-nav-title-item">
+          <i class="fas fa-object-group"></i>
+          <h4>SOCIAL</h4>
+        </div>
       </section>
-      <section class='main-nav-categories nav-el'>
-        <h3>Categories</h3>
-        <h4>Administrative</h4>
-        <h4>Design</h4>
-        <h4>Executive</h4>
-        <h4>Human Resources</h4>
+      <section class='main-nav-grid main-nav-categories nav-el'>
+        <h3 class='main-nav-grid-title'>Categories</h3>
+        <div class="main-nav-title-item">
+          <i class="fas fa-check-square" style='color: #fed432'></i>
+          <h4>Administrative</h4>
+        </div>
+        <div class="main-nav-title-item">
+          <i class="fas fa-square" style='color:#35b1fc'></i>
+          <h4>Design</h4>
+        </div>
+        <div class="main-nav-title-item">
+          <i class="fas fa-square" style='color:#e62163'></i>
+          <h4>Executive</h4>
+        </div>
+        <div class="main-nav-title-item">
+          <i class="fas fa-square" style='color:#19a889'></i>
+          <h4>Human Resources</h4>
+        </div>
       </section>
     </nav>
     <section>
       <header>
-        <div class='toggle-nav-ico header-ico'>Shrink</div>
+        <div class='toggle-nav-ico header-ico'></div>
         <div class='search-ico header-ico'></div>
         <input class='search-bar' type='text' placeholder='Search for a job, task, or resume'>
-        <div class="profile-ico header-ico">Prof</div>
-        <div class="cal-ico header-ico">Cal</div>
-        <div class="menu-ico header-ico">Menu</div>
+        <div class="profile-ico header-ico"></div>
+        <div class="cal-ico header-ico"></div>
+        <div class="apps-ico header-ico"></div>
       </header>
       <section>
         <div class='page-title-container'>
           <div class='page-title'>
             <h1>Customer Service Representative</h1>
             <div class='page-title-subtitle'>
-              <p>San Francisco, CA</p>
+              <div class="geo-ico"></div>
+              <p class='geo-location'>San Francisco, CA</p>
               <a href="">Preview this post</a>
             </div>
           </div>
           <div class='page-modify-links'>
-            <button>Open</button>
-            <button>Flag</button>
-            <button>Edit</button>
-            <button>Trash</button>
+            <button class='open-button'>
+              <div class="dot-ico"></div>OPEN
+            </button>
+            <button class='round-button'>
+              <div class='bookmark-ico'></div>
+            </button>
+            <button class='round-button'>
+              <div class="edit-ico"></div>
+            </button>
+            <button class='round-button'>
+              <div class="trash-ico"></div>
+            </button>
           </div>
         </div>
         <nav class='page-nav'>
-          <h2>SUMMARY</h2>
-          <h2>APPLICANTS</h2>
-          <h2>JOB BOARD</h2>
-          <h2>INTERVIEWS</h2>
-          <h2>ACTIVITY</h2>
-          <h2>BROADCAST</h2>
-          <h2>NOTIFICATIONS</h2>
+          <span class='selected-tab-deco'><h2 class='selected-tab'>SUMMARY</h2></span>
+          <h2 class='main-page-tab'>APPLICANTS</h2>
+          <h2 class='main-page-tab'>JOB BOARD</h2>
+          <h2 class='main-page-tab'>INTERVIEWS</h2>
+          <h2 class='main-page-tab'>ACTIVITY</h2>
+          <h2 class='main-page-tab'>BROADCAST</h2>
+          <h2 class='main-page-tab'>NOTIFICATIONS</h2>
         </nav>
       </section>
-      <section>
+      <section class='page-bg'>
         <article class='graph-content'>
-            <div class='graphs'>
-              <div>Graph1</div>
-              <div>Graph2</div>
-              <div>Graph3</div>
-              <div>Graph4</div>
+          <div class='graphs'>
+                <div class="graphs-circles-container">
+                  <div class="graphs-circles-only">
+                    <div>
+                      <div class="graph-text"><span class='graph-text-nums'>3,154</span> APPLICANTS</div>
+                      <svg class='circle-svg' height="175" width="175">
+                        <circle class='circle circle-bg' cx="87.5" cy="87.5" r="75" />
+                        <circle class='circle circle-graph1' cx="87.5" cy="87.5" r="75" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="graph-text"><span class='graph-text-nums'>1,546</span> INTERVIEWS</div>
+                      <svg class='circle-svg' height="175" width="175">
+                        <circle class='circle circle-bg' cx="87.5" cy="87.5" r="75" />
+                        <circle class='circle circle-graph2' cx="87.5" cy="87.5" r="75" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="graph-text"><span class='graph-text-nums'>912</span> FORWARDS</div>
+                      <svg class='circle-svg' height="175" width="175">
+                        <circle class='circle circle-bg' cx="87.5" cy="87.5" r="75" />
+                        <circle class='circle circle-graph3' cx="87.5" cy="87.5" r="75" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="graph-button-alignment-container">
+                    <button class='graph-button graph-totals-button'>TOTALS - Out of 5,231 views</button>
+                  </div>
+                </div>
+            <div class="graphs-bar-container">
+              <div class='bar-graph'></div>
+              <button class='graph-button'>APPLICANTS/DAY</button>
             </div>
-            <div class="graph-legends">
-              <button>TOTALS - Out of 5,231 views</button>
-              <button>APPLICANTS/DAY</button>
-            </div>
-           </article>
-          <article class="page-content">
+          </div>
+          <div class='collapse-section'>
+            <hr>
+            <button class='round-button'>
+              <div class="collapse-ico"></div>
+            </button>
+            <hr>
+          </div>
         </article>
-      </section>
-      <section>
-      <section class='job-posting'>
-        <h4>Job Description</h4>
-        <button>EDIT</button>
-        <h5>POSITION TITLE</h5>
-        <p>Customer Service Representative</p>
-        <h5>Location</h5>
-        <p>San Francisco, CA</p>
-        <h5>EMPLOYMENT TYPE</h5>
-        <p>Full-time</p>
-        <h5>EXPERIENCE</h5>
-        <p>Mid-level</p>
-        <h5>STATUS</h5>
-        <p>Open</p>
-        <h5>DESCRIPTION</h5>
-        <p>The Customer Service Representative is responsible for 
-          interacting with and providing quality assistance to all
-          radical customers, responsible for keeping up-to-date on
-          the various product shizzle; helping the bidness reduce
-          customer service wait times while doing a backhand spring
-          and eating a ham sandwich.
-        </p>
-        <h5>HIRING LEAD</h5>
-        <p>Tom Tizzy</p>
-        <h5>APPROVED SALARY</h5>
-        <p>$58,000</p>
-      </section>
-        <footer>
-          <button class='social-media-facebook'>Post to Facebook</button>
-          <button class='social-media-twitter'>Tweet this Job</button>
-          <button class='social-media-linkedin'>Post to LinkedIn</button>
-          <div>
-            <h5>Link to this Job</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
-            <input type="text">
-            <button>Copy</button>
+        <article class="page-content">
+      <section class='job-and-footer'>
+        <section class='job-posting'>
+          <h4 class='job-header job-cell job-title'>Job Description 
+            <button class='job-edit-btn job-edit-btn-mobi'>
+              <div class="job-edit-ico"></div>
+              <span>EDIT</span>
+            </button></h4>
+          <div class='job-header job-cell job-edit-btn-cell'>
+            <button class='job-edit-btn'>
+              <div class="job-edit-ico"></div> EDIT
+            </button>
           </div>
-          <div>
-            <h5>Use the Button Widget</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
-            <input type="text">
-            <button>Copy</button>
+          <h5 class='job-title job-cell'>POSITION TITLE</h5>
+          <p class='job-value job-cell'>Customer Service Representative</p>
+          <h5 class='job-title job-cell'>LOCATION</h5>
+          <p class='job-value job-cell'>San Francisco, CA</p>
+          <h5 class='job-title job-cell'>EMPLOYMENT TYPE</h5>
+          <p class='job-value job-cell'>Full-time</p>
+          <h5 class='job-title job-cell'>EXPERIENCE</h5>
+          <p class='job-value job-cell'>Mid-level</p>
+          <h5 class='job-title job-cell'>STATUS</h5>
+          <p class='job-value job-cell'>Open</p>
+          <h5 class='job-title job-cell'>DESCRIPTION</h5>
+          <p class='job-value job-cell'>The Customer Service Representative is responsible for
+            interacting with and providing quality assistance to all
+            radical customers, responsible for keeping up-to-date on
+            the various product shizzle; helping the bidness reduce
+            customer service wait times while doing a backhand spring
+            and eating a ham sandwich.
+          </p>
+          <h5 class='job-title job-cell'>HIRING LEAD</h5>
+          <p class='job-value job-cell'><img src='./images/david.png' class='hiring-lead-pic' /> Tom Tizzy</p>
+          <h5 class='job-title job-cell'>APPROVED SALARY</h5>
+          <p class='job-value job-cell'><strong>$58,000</strong></p>
+        </section>
+        <footer class='footer'>
+          <div class='social-media-buttons'>
+            <button class='social-media-facebook social-media-button'>
+              <i class="fab fa-facebook-f social-media-ico"></i>
+              <span class="social-media-button-text">Post to Facebook</span>
+            </button>
+            <button class='social-media-linkedin social-media-button'>
+              <i class="fab fa-twitter social-media-ico"></i>
+              <span class="social-media-button-text">Tweet this Job</span>
+            </button>
+            <button class='social-media-twitter social-media-button'>
+              <i class="fab fa-linkedin social-media-ico"></i>
+              <span class="social-media-button-text">Post to LinkedIn</span>
+            </button>
           </div>
-          <div>
-              <h5>Upload Resumes by Email</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
-              <input type="text">
-            </div>
-          <h5>Use the Button Widget</h5>
-          <h5>Upload Resumes by Email</h5>
+          <div class='footer-cell'>
+            <h5><i class="fas fa-globe-americas footer-fa-ico"></i>Link to this Job</h5>
+            <p class='footer-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique
+              obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
+            <input class='footer-copy-input' type="text" value='http://lorem-ipsum.dol/sit-amet-consectetur'>
+            <button class='button-copy'>Copy</button>
+          </div>
+          <div class='footer-cell'>
+            <h5><i class="fas fa-object-group footer-fa-ico"></i>Use the Button Widget</h5>
+            <p class='footer-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique
+              obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
+            <input class='footer-copy-input' type="text" value='<script type=&apos;text/javascript&apos;'>
+            <button class='button-copy'>Copy</button>
+          </div>
+          <div class='footer-cell'>
+            <h5><i class="fas fa-paper-plane footer-fa-ico"></i>Upload Resumes by Email</h5>
+            <p class='footer-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi ullam aspernatur autem similique
+              obcaecati, consequuntur eveniet hic consequatur repellendus!</p>
+            <input class='resume-email-input' type="text" value='tomtizzy@gmail.com'>
+          </div>
         </footer>
       </section>
     </section>
   </main>
 </body>
+
 </html>
