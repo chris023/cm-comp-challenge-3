@@ -139,7 +139,6 @@ main {
 
 .circle-svg {
   position: relative;
-  /* margin-right: 20%; */
   transform: rotate(90deg);
 }
 
@@ -182,7 +181,6 @@ main {
 .collapse-section {
   align-items: center;
   display: flex;
-  /* margin: 40px 0; */
 }
 
 .dot-ico {
@@ -204,6 +202,25 @@ main {
   position: absolute;
   left: 95px;
   top: 3px;
+}
+
+.fa-bars {
+  height: 25px;
+  width: 25px;
+  margin: 0;
+}
+
+.fa-caret-down {
+  color: #1794ee;
+  position: absolute;
+  filter: invert(0);
+  height: 25px;
+  left: 2px;
+  width: 25px;
+  transform: rotate(90deg);
+  margin: 0;
+  margin-right: -8px;
+  padding-left: 9px;
 }
 
 .fa-check-square:hover {
@@ -342,6 +359,10 @@ main {
   background-color: #16a4fa;
   cursor: pointer;
   filter: invert(0);
+}
+
+.search-ico:hover {
+  background-color: inherit;
 }
 
 .hiring-lead-pic {
@@ -647,6 +668,19 @@ main {
   background-color: #34bfff;
 }
 
+.toggle-navbar {
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.toggle-navbar:hover {
+  background-color: #16a4fa;
+  cursor: pointer;
+}
+
 .toggle-nav-ico {
   background: url('../images/menu.svg') no-repeat;
   background-position: 50%;
@@ -737,12 +771,6 @@ main {
 }
 
 @media screen and (max-width: 400px) {
-  /* .page-title-container,
-  .page-nav,
-  .graph-content,
-  .job-and-footer {
-    display: none;
-  } */
 
   header {
     grid-template-columns: repeat(4, 1fr);
@@ -760,7 +788,6 @@ main {
 
   .footer-cell {
     display: none;
-    /* padding: 10px 0; */
   }
 
   .geo-ico {
@@ -771,20 +798,14 @@ main {
     display: none;
   }
 
-  /* .graphs-circles-only {
-    display: none;
-  }
-
-  .bar-graph {
-    display: none;
-  } */
-
   .header-ico {
     border: none;
+    height: 60px;
+    width: 60px;
   }
 
   .job-and-footer {
-    padding: 20px 10px;
+    padding: 0px 10px 20px 10px;
   }
 
   .job-cell {
@@ -853,8 +874,10 @@ main {
   }
 
   .search-ico {
+    border-top: solid 1px rgb(255, 255, 255);
     grid-row: 2;
     background-size: 20%;
+    /* display: none; */
   }
 
   .selected-tab-deco {
@@ -877,9 +900,24 @@ main {
 
 
   .search-bar {
+    border-top: solid 1px lightgray;
     grid-column: span 3;
     grid-row: 2;
+    margin-left: -30px;
   }
 
+  .fa-bars {
+    height: auto;
+    width: auto;
+  }
+
+  .fa-caret-down {
+    left: 6px;
+    top: 21px;
+  }
+
+  .toggle-navbar {
+    font-size: 18px;
+  } 
 
 }
